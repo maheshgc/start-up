@@ -1,0 +1,27 @@
+﻿@model StartUp.Models.Faculty
+
+<h6>Edit Faculty</h6>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="Update">
+
+            <input asp-for="FacultyId" type="hidden" />
+            <div class="form-group">
+                <label class="control-label">Faculty Name</label>
+                <input asp-for="FacultyName" class="form-control" />
+                <span asp-validation-for="FacultyName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Faculty Description</label>
+                <input asp-for="FacultyDescription" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>

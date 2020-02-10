@@ -1,0 +1,30 @@
+﻿@model List<StartUp.Models.Faculty>
+
+<h3>Faculty List</h3>
+<hr/>
+
+<a asp-controller="Faculty" asp-action="Add" class="btn btn-sm btn-outline-success mb-3" >Create</a>
+
+
+<table class="table table-hover table-bordered">
+    <tr>
+        <th>Faculty Id</th>
+        <th>Faculty Name</th>
+        <th>Faculty Description</th>
+        <th>Actions</th>
+    </tr>
+    @foreach(var data in Model)
+    {
+        <tr>
+            <td>@data.FacultyId</td>
+            <td>@data.FacultyName</td>
+            <td>@data.FacultyDescription</td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@data.FacultyId">Edit</a> |
+                <a asp-action="Index" asp-route-id="@data.FacultyId">View</a> |
+                <a asp-action="Delete" asp-route-id="@data.FacultyId"
+                   onclick="return confirm('Are you sure you want to delete this faculty?');">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

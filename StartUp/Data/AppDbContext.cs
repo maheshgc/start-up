@@ -13,8 +13,8 @@ namespace StartUp.Data
         {
 
         }
-
-        public DbSet<Bike> Bikes { get; set; }
-
+        // public DbSet<ModelName> TableName { get; set; }
+        public DbSet<Student> Student { get; set; }
+        public DbSet<Faculty> Faculty { get; set; }
     }
 }

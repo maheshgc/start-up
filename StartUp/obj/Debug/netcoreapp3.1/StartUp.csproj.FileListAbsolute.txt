@@ -2,7 +2,6 @@ C:\Users\mahes\source\StartUp\StartUp\bin\Debug\netcoreapp3.1\appsettings.Develo
 C:\Users\mahes\source\StartUp\StartUp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\mahes\source\StartUp\StartUp\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
 C:\Users\mahes\source\StartUp\StartUp\bin\Debug\netcoreapp3.1\StartUp.exe
-C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\StartUp.csprojAssemblyReference.cache
 C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\staticwebassets\StartUp.StaticWebAssets.Manifest.cache
 C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\staticwebassets\StartUp.StaticWebAssets.xml
 C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\StartUp.RazorAssemblyInfo.cache
@@ -157,8 +156,14 @@ C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\StartUp.MvcApplica
 C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\StartUp.Views.pdb
 C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\StartUp.dll
 C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\StartUp.pdb
-C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Create.cshtml.g.cs
-C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Delete.cshtml.g.cs
-C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Details.cshtml.g.cs
-C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Edit.cshtml.g.cs
-C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Index.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Students\Create.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Students\Delete.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Students\Details.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Students\Edit.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Students\Index.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Faculty\Index.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Faculty\Detail.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Faculty\List.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Faculty\Add.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\Razor\Views\Faculty\Edit.cshtml.g.cs
+C:\Users\mahes\source\StartUp\StartUp\obj\Debug\netcoreapp3.1\StartUp.csprojAssemblyReference.cache
