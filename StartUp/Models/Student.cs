@@ -13,5 +13,6 @@ namespace StartUp.Models
         [Required]
         public string StudentName { get; set; }
         public int? StudentAge { get; set; }
+
     }
 }

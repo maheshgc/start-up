@@ -3,7 +3,20 @@
 <h1>Faculty Details</h1>
 <hr/>
 
-<b>Faculty Id :</b>  @Model.FacultyId  <br/>
-<b>Faculty Name: </b>@Model.FacultyName  <br/>
-<b>Facutlty Descrption: </b> @Model.FacultyDescription
-
+<div class="row">
+    <div class="col-md-8">
+        @if (@Model.ImageName != null)
+        {
+            <img src="~/Uploads/@Model.ImageName" class="img-fluid img-thumbnail" />
+        }
+        else
+        {
+            <img src="~/dummy_user.jpg" class="img-fluid img-thumbnail" style="height:300px" />
+        }
+    </div>
+    <div class="col-md-4">
+        <b>Faculty Id :</b>  @Model.FacultyId  <br />
+        <b>Faculty Name: </b>@Model.FacultyName  <br />
+        <b>Facutlty Descrption: </b> @Model.FacultyDescription
+    </div>
+</div>

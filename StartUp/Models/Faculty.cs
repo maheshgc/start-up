@@ -14,6 +14,7 @@ namespace StartUp.Models
         public int FacultyId { get; set; }
         public string FacultyName { get; set; }
         public string FacultyDescription { get; set; }
+        public string ImageName { get; set; }
         [NotMapped]
         public IFormFile FacultyImage { get; set; }
     }

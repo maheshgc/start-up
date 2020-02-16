@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -15,11 +16,11 @@ namespace StartUp.Controllers
     {
         string hello;
         AppDbContext _context;
-        IWebHostEnvironment _host;
-        public FacultyController(AppDbContext context, IWebHostEnvironment host)
+        IWebHostEnvironment _env;
+        public FacultyController(AppDbContext context, IWebHostEnvironment env)
         {
             _context = context;
-            _host = host;
+            _env = env;
         }
 
         public IActionResult Index(int id)
@@ -70,11 +71,21 @@ namespace StartUp.Controllers
         [HttpPost]
         public IActionResult Create(Faculty data)
         {
-
-            string rootPath = _host.WebRootPath;
-
             if (ModelState.IsValid)  // required or other validation success or passs --- true
             {
+                if (data.FacultyImage != null)
+                {
+                    string rootPath = _env.WebRootPath;              // C:user/timroname/straup/wwwroot/
+                    string uniqueName = Guid.NewGuid().ToString(); //efdfjde432423423454
+                    string imageName = uniqueName + data.FacultyImage.FileName;  // bererewfesomething.jpg
+                    string uploadPath = rootPath + "/Uploads/" + imageName;  // C:users/name/str/wwroo/uploads/imagename.jpg
+                    data.ImageName = imageName;                      // to save image name in database 
+
+                    using (var fileStream = new FileStream(uploadPath, FileMode.Create))
+                    {
+                        data.FacultyImage.CopyTo(fileStream);
+                    }
+                }
                 _context.Add(data);
                 _context.SaveChanges();
                 return RedirectToAction("List");
@@ -82,7 +93,18 @@ namespace StartUp.Controllers
             return View("Add",data);        
         }
 
-        public IActionResult Delete(int id)
+    //    string rootPath = env.WebRootPath;                    // get the root directory i.e. /wwwroot/
+    //    string uniqueName = Guid.NewGuid().ToString();
+
+    //    string fileName = uniqueName + bike.BikeImage.FileName;      // file uploaded name
+    //    string uploadPath = rootPath + "/Images/" + fileName;       // creating upload path
+    //    bike.ImageName = fileName;                                 // assing file name to bike>imagename                                                                                    
+    //                using (var filestream = new FileStream(uploadPath, FileMode.Create))
+    //                {
+    //                    await bike.BikeImage.CopyToAsync(filestream);
+    //}
+
+    public IActionResult Delete(int id)
         {
             var data = _context.Faculty.Find(id);
             _context.Remove(data);
